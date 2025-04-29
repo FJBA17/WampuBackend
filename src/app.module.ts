@@ -13,6 +13,9 @@ import { Company } from './company/company.entity';
 import { User } from './users/user.entity';
 import { Vehicle } from './vehicles/vehicles.entity';
 import { TrackingRecord } from './tracking/tracking.entity'; // Entidad TrackingRecord
+import crypto from 'crypto';
+(global as any).crypto = crypto;
+
 
 @Module({
   imports: [
